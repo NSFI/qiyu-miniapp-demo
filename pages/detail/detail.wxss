@@ -1,0 +1,131 @@
+/* pages/detail/detail.wxss */
+page{
+  --red: #C93D3E;
+	--orange: #f37b1d;
+	--yellow: #C7AD72;
+	--olive: #8dc63f;
+	--green: #39b54a;
+	--cyan: #1cbbb4;
+	--blue: #0081ff;
+	--purple: #6739b6;
+	--mauve: #9c26b0;
+	--pink: #F28A89;
+	--brown: #a5673f;
+	--grey: #8799a3;
+	--black: #333333;
+	--darkGray: #666666;
+	--gray: #aaaaaa;
+	--ghostWhite: #f1f1f1;
+	--white: #ffffff;
+  width: 100%
+}
+.book-img{
+  background-image: url("http://nos.netease.com/ysf/509e46a45083102f3450eb2a2f93b301.jpg");
+  height: 450rpx;
+  background-size: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.book-img image{
+  width: 250rpx;
+  height: 320rpx;
+}
+.book-buyinfo{
+  margin:20rpx;
+  border-bottom: 1px solid var(--ghostWhite);
+  display: flex;
+  padding:10rpx 0;
+}
+.book-buyinfo text{
+  display: inline-block;
+  margin-left: 20rpx;
+  font-size: 14px;
+  line-height: 35px;
+  color:var(--darkGray)
+}
+.user-avatar{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+
+}
+.user-avatar:nth-child(n+2){
+  margin-left: -10rpx;
+}
+.book-info{
+  margin: 30rpx;
+  border-bottom: 1px solid var(--ghostWhite);
+}
+
+.book-name{
+  font-size: 18px;
+}
+.book-price{
+  font-size:25px;
+  margin-top: 20rpx;
+}
+.book-detail{
+  color: var(--darkGray);
+  font-size:13px;
+  margin-top:30rpx;
+}
+.book-detail-item{
+  margin:15rpx 0;
+}
+.book-infotitle{
+  color:var(--gray);
+  display: inline-block;
+  margin-right: 10rpx;
+}
+
+.book-overview{
+  margin:30rpx;
+
+}
+
+.book-content{
+  /* margin-top:15rpx; */
+  margin-bottom:60px;
+  font-size: 13px;
+  color:var(--darkGray);
+  white-space:pre-wrap;
+}
+
+.bottom-nav{
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: space-between;
+  flex:1;
+  border: 1rpx solid var(--ghostWhite);
+  width:100%;
+  background-color: white;
+}
+.bottom-nav .btn{
+  flex:1;
+  font-size: 16px;
+  margin:10rpx;
+}
+
+.btn.buy{
+  background-color: var(--yellow);
+  color:white;
+
+}
+.btn.kefu{
+  background-color: white;
+  border: 1px solid var(--yellow);
+  color:var(--yellow);
+}
+.bottom-nav .iconimg{
+display: flex;
+align-items: center;
+padding: 30rpx;
+
+}
+
+.bottom-nav image{
+  width: 20px;
+  height: 20px;
+}

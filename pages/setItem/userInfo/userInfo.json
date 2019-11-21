@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "icon-font": "plugin://myPlugin/Iconfont"
+  },
+  "navigationBarTitleText": "用户信息"
+}

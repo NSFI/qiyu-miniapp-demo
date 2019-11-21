@@ -1,0 +1,8 @@
+<!--pages/setItem/setappid/setappid.wxml-->
+<view class="m-Info">
+  <view class="card-form-group flex">
+    <input placeholder="请输入您小程序的APPID" value="{{appId}}" bindinput="handleInput"></input>
+    <view class="cancel" bindtap="handleCancel">x</view>
+  </view>
+  <button class="submit" bindtap="handleSubmit">确定</button>
+</view>

@@ -1,0 +1,59 @@
+<!--pages/setItem/card/card.wxml-->
+
+
+
+<view class="m-Info">
+  <view class="card-bar">
+    <view class="card-title">
+      <text>商品卡片信息</text>
+    </view>
+  </view>
+  <form bindsubmit="handleSubmit">
+    <view style="">
+      <view class="card-form-group">
+        <view class="title">标题（title）:</view>
+        <input placeholder="标题（title)" value="任天堂（Nintendo）Switch游戏机" name="title"></input>
+      </view>
+      <view class="card-form-group">
+        <view class="title">商品描述（desc）:</view>
+        <input placeholder="商品描述（desc）" value="任天堂（Nintendo） Switch NS NX掌上游戏机便携 塞尔达马里奥新款游戏机 主机不锁 日版黑机彩色手柄+中文赛/塞尔达传说(指南+地图)" name="desc"></input>
+      </view>
+      <view class="card-form-group">
+        <view class="title">商品备注（note）:</view>
+        <input placeholder="商品备注（note）" value="$2330" name="note"></input>
+      </view>
+      <view class="card-form-group">
+        <view class="title">配图地址（picture）:</view>
+        <input placeholder="配图地址（picture）" value="https://img10.360buyimg.com/n5/s75x75_jfs/t4030/290/29851193/293745/d5e2b731/58ac3506Nbb57b5f6.jpg" name="picture"></input>
+      </view>
+      <view class="card-form-group">
+        <view class="title">跳转地址（url）:</view>
+        <input placeholder="跳转地址（url）" value="https://www.taobao.com/" name="url"></input>
+      </view>
+      <view class="card-form-group" style="padding-bottom:30rpx">
+        <view class="title">发送按钮文案（actionText）:</view>
+        <input placeholder="发送按钮文案（actionText）" value="发送" name="ctionText"></input>
+      </view>
+
+    </view>
+
+
+
+    <view style="margin-top:20rpx">
+      <view class="card-form-group flex border-bottom">
+        <view class="title">是否在访客端展示（isShow）:</view>
+        <switch checked="{{true}}" name="isShow"></switch>
+      </view>
+      <view class="card-form-group flex border-bottom">
+        <view class="title">访客手动发送（sendByUser）:</view>
+        <switch checked="{{false}}" name="sendByUser"></switch>
+      </view>
+
+
+    </view>
+    <view class="u-btn-con">
+      <button formType="submit" class="submit">确定</button>
+    </view>
+  </form>
+
+</view>

@@ -1,0 +1,34 @@
+<!--pages/detail/detail.wxml-->
+<scroll-view scroll-y>
+  <view class="book-img">
+    <image src="{{book.img}}"></image>
+  </view>
+  <view class="book-buyinfo">
+    
+    <image src="http://nos.netease.com/ysf/bfd071e7ff51559e6cabf1245275c1ef.jpg" class="user-avatar"></image>
+    <image src="http://nos.netease.com/ysf/572df1e5a9a476c7e610373e63eeb850.jpg" class="user-avatar"></image>
+    <image src="http://nos.netease.com/ysf/523abaccb8a4847a3055a4abdcbc4d9d.jpg" class="user-avatar"></image>
+    <text>蜗牛、七鱼等15人买过这本书</text>           
+  </view>
+  <view class="book-info">
+    <view class="book-name">{{book.name}}</view>
+    <view class="book-price">¥{{book.price}}</view>
+    <view class="book-detail">
+     <view class="book-detail-item"><text decode="{{true}}" class="book-infotitle">作&ensp;&ensp;者：</text><text>{{book.author}}</text></view>
+     <view class="book-detail-item"><text class="book-infotitle">出版社：</text><text>{{book.publisher}}</text></view>
+     <view class="book-detail-item"><text decode="{{true}}" class="book-infotitle">出&ensp;&ensp;版：</text><text>{{book.date}}</text></view>
+     <view class="book-detail-item"><text decode="{{true}}" class="book-infotitle">装&ensp;&ensp;帧：</text><text>{{book.binding||'平装'}}</text></view>
+    </view>
+  </view>
+  <view class="book-overview">
+    <view>简介</view>
+    <view class="book-content">
+    {{book.content}}
+    </view>
+  </view>
+
+
+</scroll-view>
+  <view class="bottom-nav">
+    <button class="btn buy" bindtap="toKefu">联系客服</button>
+  </view>

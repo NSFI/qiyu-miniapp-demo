@@ -1,0 +1,61 @@
+<!--pages/setItem/userInfo/userInfo.wxml-->
+<view class="m-Info">
+  <view class="card-form-group flex">
+    <view class="title">VIP等级</view>
+    <slider step="{{1}}" value="{{level}}" show-value="{{true}}" min="{{0}}" max="{{11}}" selected-color="#C7AD72" active-color="#C7AD72" bindchange="handleVipChange" style="flex:1"></slider>
+  </view>
+  <view class="card-form-group flex">
+    <view class="title">操作</view>
+    <button bindtap="handleLogout" class="btn loginout">注销用户</button>
+  </view>
+
+  <view class="card-form-group flex" style="margin-top:30rpx;">
+    <view class="title">当前用户</view>
+    <view style="font-size: 14px;margin-right: 40rpx;">{{selectedName ? selectedName : '匿名用户'}}</view>
+  </view>
+  <view class="card-form-group flex">
+    <view class="title">切换用户</view>
+    <view>
+      <button wx:key="userId" class="m-Info_btn_item" bindtap="handleSelect" wx:for="{{users}}" wx:for-item="item" wx:for-index="index" data-selected="{{item.userId}}" data-name="{{item.name}}" data-userinfo="{{item}}" class="btn userbtn {{selected == item.userId?'selected':''}}">
+        <text>{{item.name}}</text>
+        <!-- selected === item.userId -->
+
+      </button>
+    </view>
+    <!-- <button bindtap="handleLogout" class="btn loginout">注销用户</button> -->
+  </view>
+  <view>
+
+  </view>
+
+  <!-- <view class="m-Info_item">
+    <view class="m-Info_item_title">
+      <view class="Info_item_title_text">当前用户</view>
+    </view>
+    <view>{{selectedName ? selectedName : '匿名用户'}}</view>
+  </view>
+  <view class="m-Info_item">
+    <view class="m-Info_item_title">
+      <view class="Info_item_title_text">切换用户</view>
+    </view>
+  </view>
+  <view class="m-Info_btn_con">
+    
+  </view> -->
+  <view class="card-bar " style="margin-top:30rpx">
+    <view class="card-title">
+      <text>自定义用户信息</text>
+    </view>
+  </view>
+  <view class="card-form-group flex">
+    <view class="title">账号ID *</view>
+    <input placeholder="请输入账号ID" bindconfirm="handleIdConfirm" bindblur="handleIdConfirm"></input>
+  </view>
+  <view class="card-form-group">
+    <view class="title">crm data</view>
+    <textarea placeholder="请输入crm data" class="u-textarea" maxlength="-1" cursor-spacing="140" bindconfirm="handleDataConfirm"></textarea>
+  </view>
+  <view class="card-bar flex">
+    <button bindtap="handleCustom" class="btn switch">切换</button>
+  </view>
+</view>

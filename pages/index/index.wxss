@@ -1,0 +1,130 @@
+/**index.wxss**/
+page{
+  --red: #C93D3E;
+	--orange: #f37b1d;
+	--yellow: #C7AD72;
+	--olive: #8dc63f;
+	--green: #39b54a;
+	--cyan: #1cbbb4;
+	--blue: #0081ff;
+	--purple: #6739b6;
+	--mauve: #9c26b0;
+	--pink: #F28A89;
+	--brown: #a5673f;
+	--grey: #8799a3;
+	--black: #333333;
+	--darkGray: #666666;
+	--gray: #aaaaaa;
+	--ghostWhite: #f1f1f1;
+	--white: #ffffff;
+  background: #eee;
+}
+.book-container{
+  display: flex;
+  background-color: #fff;
+  margin:20rpx 0;
+  padding:20rpx 40rpx;
+}
+.book-img image{
+  width: 250rpx;
+  height: 280rpx;
+}
+.book-info{
+  margin-left:20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex:1
+}
+.book-author{
+  color:var(--gray);
+  font-size:13px;
+  margin:20rpx 0;
+}
+.book-price{
+  font-size:18px;
+  margin-bottom: 10rpx;
+}
+
+.forkefu{
+  /* background-color:var(--yellow); */
+  background-color:white;
+  border-radius:50%;
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  z-index:1000;
+}
+.kefuimg{
+  width:30px;
+  height:30px;
+  border-radius:50%
+}
+
+.message{
+  background-color: var(--orange);
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: -10rpx;
+  right: -10rpx;
+  font-size: 10px;
+  vertical-align: middle;
+  line-height: 40rpx;
+}
+
+.auth-container{
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  height:100vh;
+  z-index: 10000;
+  /* background:rgba(0,0,0,0.5); */
+  background: white;
+  /* display:flex; */
+  /* justify-content:center; */
+  /* align-items:center; */
+}
+.split-line{
+  border:1rpx solid var(--ghostWhite);
+  width: 100%;
+}
+.auth-content{
+  padding: 50rpx;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  margin-top:50rpx;
+
+}
+.auth-tip{
+  margin-top:50rpx;
+  width: 100%;
+  color:var(--gray)
+}
+.auth-btn{
+  margin-top:50rpx;
+  font-size:16px;
+  background-color:var(--yellow);
+  color:white;
+  width: 100%;
+}
+.auth-cancel{
+  margin-top:10rpx;
+  font-size:16px;
+  background-color:var(--ghostWhite);
+  width: 100%;
+}
+.auth-tip-agree{
+  color:var(--darkGray);
+  margin-bottom:20rpx
+}

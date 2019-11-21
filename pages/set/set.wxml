@@ -1,0 +1,27 @@
+<!--pages/set/set.wxml-->
+<view class="detail-container">
+  <navigator class="toSetDetail" class="detail-item" url="/pages/setItem/setappid/setappid" >
+    <view class="detail-title">绑定AppId</view>
+    <view class="detail-icon"></view>
+  </navigator>
+  <navigator class="toSetDetail" class="detail-item" url="plugin://myPlugin/chat" >
+    <view class="detail-title">咨询客服</view>
+    <view class="detail-icon"></view>
+  </navigator>
+  <view class="toSetDetail" class="detail-item" bindtap="toScan">
+    <view class="detail-title">扫一扫</view>
+    <view class="detail-icon"></view>
+  </view>
+  <navigator class="toSetDetail" class="detail-item" url="/pages/setItem/userInfo/userInfo" >
+    <view class="detail-title">用户信息</view>
+    <view class="detail-icon"></view>
+  </navigator>
+  <navigator class="toSetDetail" class="detail-item" url="/pages/setItem/card/card" >
+    <view class="detail-title">商品卡片</view>
+    <view class="detail-icon"></view>
+  </navigator>
+</view>
+
+<view class="tip-container">
+<text>说明：如果您想使用“扫一扫”绑定您企业的客服时，请务必先绑定您小程序的AppId，否则会导致无法连接客服。</text>
+</view>
