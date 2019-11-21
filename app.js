@@ -43,12 +43,12 @@ App({
         this.globalData.myPluginInterface._$configAppKey(appKey);
         this.globalData.myPluginInterface.__configDomain(domain);
       } else {
-        this.globalData.myPluginInterface.__configAppId("wxae5e29812005203f");
+        this.globalData.myPluginInterface.__configAppId("dsjilnmfoiedql23941"); 
         this.globalData.myPluginInterface._$configAppKey("3858be3c20ceb6298575736cf27858a7");
         this.globalData.myPluginInterface.__configDomain("https://qiyukf.com");
       }
     } else {
-      this.globalData.myPluginInterface.__configAppId("wxae5e29812005203f");
+      this.globalData.myPluginInterface.__configAppId("dsjilnmfoiedql23941");
       this.globalData.myPluginInterface._$configAppKey("3858be3c20ceb6298575736cf27858a7");
       this.globalData.myPluginInterface.__configDomain("https://qiyukf.com");
     }
